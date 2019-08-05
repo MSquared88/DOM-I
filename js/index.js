@@ -76,6 +76,48 @@ let ctaButton = document.querySelector('button');
 
 ctaButton.textContent = siteContent.cta.button
 
+
+
+//font button
+
+
+let mainContent = document.querySelector('.main-content')
+
+let newButton = document.createElement('button')
+
+newButton.textContent = "Change Font Size"
+
+newButton.style.border = '1px double black'
+
+newButton.style.fontSize = '16px'
+
+newButton.style.background = 'white'
+
+newButton.style.width = '170px'
+
+newButton.style.height = '32px'
+
+newButton.style.marginBottom = '20px'
+
+newButton.style.cursor = 'pointer'
+
+
+mainContent.prepend(newButton)
+
+
+newButton.addEventListener("click", (event) => {
+  mainContent.style.fontSize = '1.4rem'
+  mainContent.style.lineHeight = '25px'
+
+})
+
+
+
+
+
+
+
+
 let ctaImg = document.querySelector('.cta img');
 
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -162,4 +204,5 @@ email.textContent = siteContent['contact']['email'];
 let footerP = document.querySelector('footer p')
 
 footerP.textContent = siteContent.footer.copyright
+
 
