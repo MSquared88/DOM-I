@@ -61,3 +61,61 @@ ctaButton.textContent = siteContent.cta.button
 let ctaImg = document.querySelector('.cta img')
 
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// main content
+
+//top content
+let featuresH4 = document.querySelector(".top-content h4")
+
+featuresH4.textContent = siteContent['main-content']['features-h4']
+
+let featuresP = document.querySelector(".top-content p")
+
+featuresP.textContent = siteContent['main-content']['features-content']
+
+let aboutH4 = document.querySelector(".top-content .text-content:last-of-type  h4")
+
+aboutH4.textContent = siteContent['main-content']['about-h4']
+
+let aboutP = document.querySelector(".top-content .text-content:last-of-type  p")
+
+aboutP.textContent = siteContent['main-content']['about-content']
+
+
+//middle-img
+
+let midImg = document.getElementById("middle-img")
+
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//bottom content
+
+let servicesH4 = document.querySelector(".bottom-content .text-content h4")
+
+servicesH4.textContent = siteContent['main-content']['services-h4']
+
+
+
+let servicesP = document.querySelector('.bottom-content .text-content p')
+
+servicesP.textContent = siteContent['main-content']['services-content']
+
+
+let productH4 = document.querySelector('.bottom-content .text-content:nth-child(2)  h4')
+
+productH4.textContent = siteContent['main-content']['product-h4']
+
+
+let productP = document.querySelector('.bottom-content .text-content:nth-child(2)  p')
+
+productP.textContent = siteContent['main-content']['product-content']
+
+
+let visionH4 = document.querySelector('.bottom-content .text-content:last-of-type  h4')
+
+visionH4.textContent = siteContent['main-content']['vision-h4']
+
+let visionP = document.querySelector('.bottom-content .text-content:last-of-type  p')
+
+visionP.textContent = siteContent['main-content']['vision-content']
+
